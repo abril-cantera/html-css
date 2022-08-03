@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    background-color: #202124;
+    font-family: sans-serif;
+
+}
+.nav {
+    display: flex; 
+    justify-content: end;
+    padding: 2rem;
+    font-size: 1.3rem;
+    align-items: center;
+}
+.nav__link {
+    padding-left: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__link.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    border: 0.2rem solid cyan;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    margin-left: 2rem;
+}
+
+
+.main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 72vh;
+}
+.logo {
+    width: 45rem;
+}
+.main__search {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 3rem;
+    max-width: 575px;
+    width: 100%;
+    margin: 2.5rem;
+    height: 3.5rem;
+}
+button {
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 4rem;
+}
+
+
+footer {
+   background-color: rgb(21, 24, 24);
+ 
+}
+
+.parrafo {
+    padding: 2rem;
+    border-bottom: 1px solid white;
+    color: rgb(126, 121, 121);
+    font-weight: 600;
+}
+ 
+.list {
+    display: flex;
+    list-style: none;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list__li {
+    padding-right: 2rem;
+}
+
+.list__li1 {
+    padding-left: 2rem;
+}
+
+.list a {
+    text-decoration: none;
+    color: rgb(126, 121, 121);
+}
+
+
+
+@media (min-width: 480px) {
+    .main {
+       padding: 1rem; 
+       height: 60vh;
+    }
+    .logo {
+        width: 30rem;
+    }
+    .main__search {
+        width: 80%;
+    }
+    button {
+        margin-right: 1rem;
+    }
+    .div {
+        flex-direction: column;
+    }
+    .list {
+        padding: 1rem;
+      
+    }
+    .list__li {
+        padding: 0.6rem;
+        font-size: 1.4rem;
+    }
+    .list__li1 {
+        padding-bottom: 1rem;
+        font-size: 1.4rem;
+        margin: 0 auto;
+    }
+}
